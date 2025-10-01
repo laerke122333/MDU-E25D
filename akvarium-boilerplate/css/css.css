@@ -1,29 +1,23 @@
 /**
- * file: css/css.css
- * purpose: styling
+ * Akvarium CSS udkast
  **/
 
-/* Remove whitespace on top of certain browsers */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+ /* Variabler: farvepaletten er lavet i JsFiddle */
+ :root {
+  --color-1: rgb(109 181 202);
+  --color-2: rgb(184 216 224);
+  --color-3: rgb(252 245 239);
+  --color-4: rgb(255 114 53);
 }
 
-/* Define variables in the :root */
- 
-
-/* Use your variables on elements along these lines */
-/*
-:root {
-  --contrast: lime;
-  --backgr: #000;
+body {
+  /*background: linear-gradient(90deg, var(--color-1) 0%, var(--color-1) 25%, var(--color-2) 25%, var(--color-2) 50%, var(--color-3) 50%, var(--color-3) 75%, var(--color-4) 75%, var(--color-4) 100%);*/
+  background-color: var(--color-2);
 }
 
---- You can use the variables like this ---
-
- main {
-   color: var(--contrast);
-   background-color: var(--backgr);
- }
-*/
+/* Hvis opløsningen er en anden så fyldes skærmen helt ud */
+#scene {
+  width: 100%;
+  height: 100vh;
+  border: 1px dotted var(--color-4);
+}
