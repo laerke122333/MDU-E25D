@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lister: sådan</title>
+    <style>
+        body {
+            font-size: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Jeg er en html-kommentar -->
+    <h1>Sådan bruger du lister (array)</h1>
+    <ul id="minListe"></ul>
+
+    <script>
+        // lister laves sådan (array)
+        let ingredienser = [
+            "Tomater",
+            "Løg",
+            "Kartofler",
+            "Ingefær",
+            "Artiskok"
+        ]
+
+        // push metoden - lægger noget ind i listen
+        ingredienser.push("And i eget fedt")
+        ingredienser.push("Gråspurv")
+
+        let noget = "her er noget"
+        ingredienser.push(noget)
+
+        // pop metoden - fjerner noget fra listen
+        // ingredienser.pop()
+
+        // sorter
+        ingredienser.sort()
+
+    // console.log(ingredienser[0])
+
+    // vis listen med et loop
+    for (let i = 0; i<ingredienser.length; i++){
+        document.getElementById("minListe").innerHTML += "<li>" 
+            + ingredienser[i]
+            + "</li>"
+    }
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
