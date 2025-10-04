@@ -4,8 +4,8 @@
 
 Her kan du finde min boilerplate og eksempler på kode fra programmeringstimerene.
 
-## MEN DET HER ER MIN VERSION
+## Kode fra undervisningen
 
-Mwahhaha
+Kodeeksemplerne er som vist i lektionerne. 
 
 / petj
