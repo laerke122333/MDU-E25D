@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <title>Tastetryk med switch</title>
+  <script>
+    function visTast(event) {
+      const tast = event.key;
+
+      switch (tast) {
+        case "w":
+        case "W":
+          alert("Du trykkede på W!");
+          // fjern alerten og sæt din funktion ind her.
+          break;
+        default:
+          console.log("Du trykkede på: " + tast);
+          document.getElementById("output").textContent = "Du trykkede på: " + tast;
+      }
+    }
+
+    document.addEventListener("keydown", visTast);
+  </script>
+</head>
+<body>
+  <h1>Tryk på en tast</h1>
+  <p>Når du trykker et w eller W fyres en funktion af.</p>
+  <p id="output">Ingen tast trykket endnu.</p>
+</body>
+</html>

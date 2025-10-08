@@ -7,18 +7,19 @@
 /* Sådan importerer du direkte til css */
 
 /* Fonten eller fontene importeres */
-@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Lacquer&family=Permanent+Marker&family=Ribeye&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Lacquer&family=Permanent+Marker&family=Ribeye&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 /*
-Sådan bruger du fontene, her "Permanent marker"
-
-.permanent-marker-regular {
-  font-family: "Permanent Marker", cursive;
-  font-weight: 400;
+.oswald-<uniquifier> {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
   font-style: normal;
 }
-
 */
+
+
+
 
 /* Margin og kanter fjernes i visse browsere */
 * {
@@ -31,11 +32,12 @@ Sådan bruger du fontene, her "Permanent marker"
 :root {
 
   /* farver */
-  --farve_1: rgb(229, 241, 229); /* Lys */
+  --farve_1: rgb(251, 250, 244); /* Lys */
   --farve_2: #150202; /* Mørkest */
-  --farve_3: #27c4c6;
-  --farve_4: #c627c4;
+  --farve_3: #27c3c669;
+  --farve_4: #70496f;
   --farve_5: #c62a27;
+  --farve_6: #378c3c;
   /* ... etc ... */
 
   /* typografi */
@@ -59,7 +61,7 @@ Sådan bruger du fontene, her "Permanent marker"
 body {
   font-family: var(--broedtekst);
   background-color: var(--farve_1);
-  color: var(--farve_2);
+  color: var(--farve_4);
 }
 
 /* Når du vil lave kolonner */
@@ -114,6 +116,10 @@ img {
   color: var(--farve_3);
 }
 
+.farve_6_bg {
+  background-color: var(--farve_6);
+}
+
 /* fortsæt selv ... alle farver skal med ... */
 
 /* TYPOGRAFI */
@@ -122,10 +128,22 @@ h2 {
   font-family: var(--overskrifter);
 }
 
+h1 {
+ /* Her kommer google font */ 
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 h2 {
   margin-top: 2rem;
   margin-bottom: .5rem;
+  background-color: var(--farve_3);
+  color: var(--farve_1);
 }
+
+  /* prøv at style overskrifterne!  h1 .. h6 */
+
 
 /* LAYOUT */
 
@@ -135,7 +153,6 @@ h2 {
 */
 nav {
   min-height: 10vh;
-  background-color: var(--farve_5);
 }
 
 nav ul {

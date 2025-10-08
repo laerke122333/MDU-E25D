@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objekt med liste</title>
+    <style>
+        body {
+            font-size: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Objekt med liste</h1>
+    <div id="demo"></div>
+
+    <script>
+        // vi laver et objekt
+        let fe = {
+            navn: "Wanda",
+            ting: [
+                "tryllestav",
+                "støv",
+                "hinkesten"
+            ]
+        }
+
+        fe.ting.sort() // alfabetisk om jeg må be!
+
+        demo.innerHTML = "Feen hedder " 
+        + fe.navn
+        + "<ul>"
+
+        for (let i = 0; i<fe.ting.length;i++){
+            demo.innerHTML +=  "<li>" + fe.ting[i] + "</li>"
+        }
+
+        demo.innerHTML += "</ul>"
+
+        // komplekst objekt med feer
+        let feerne = {
+            [
+                {
+                    navn: "Wanda",
+                    ting: [
+                        "tryllestav",
+                        "støv",
+                        "hinkesten"
+                    ]
+                },
+                {
+                    navn: "Kosmo",
+                    ting: [
+                        "seng",
+                        "blyant",
+                        "kamel",
+                        "tudse",
+                        "kat",
+                        "panda"
+                    ]
+                }
+            ]
+        }
+        
+        
+        
+        {
+            navn: "Wanda",
+            ting: [
+                "tryllestav",
+                "støv",
+                "hinkesten"
+            ]
+        }
+    </script>
+</body>
+</html>

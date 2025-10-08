@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditionals</title>
+    <style>
+        body {
+            background-color: black;
+            color: greenyellow;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conditionals</h1>
+
+    <button onclick="tjekDet(12,'Danmark')">Jeg er 12 må jeg få en øl?</button>
+
+    <div id="info"></div>
+    
+    <script>
+        // indledende test
+        console.log("Mojn Heine! JavaScriptet kører.")
+
+        // variabler til test
+        let a = 23
+        let b = 49
+        let c = a * b
+
+        // test if
+        if (a > b){
+            document.getElementById("info").innerHTML = "Ja, a < end b."
+        } else {
+            document.getElementById("info").innerHTML = "Er a > b? <br> Nej den er ej!"
+        }
+
+// Må viggo drikke alkohol?
+let alder = 45;
+let land = "Danmark";
+let okText = "Ja det må du gerne";
+let ikkeOkText = "Nej du kan ej" // camelCase
+
+function tjekDet(dinAlder, ditLand){
+
+    // afprøver noget
+    if (ditLand == "Danmark" && dinAlder >= 18) {
+        info.innerHTML = okText;
+    }
+    else {
+        info.innerHTML = ikkeOkText;
+    }
+}
+
+tjekDet(21,"Danmark")
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
