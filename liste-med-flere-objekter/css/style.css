@@ -1,3 +1,8 @@
+body {
+    background-color: navajowhite;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 img {
     width: 250px;
     height: auto;
@@ -5,13 +10,18 @@ img {
 
 .troldeListe {
     position: relative;
+    top: 0px;
     width: 43ch;
-    margin: auto;
+}
+
+section {
+    text-align: center;
 }
 
 #demo {
-    display: flex;
     position: relative;
+    display: flex;
+    justify-content: center;
     align-items: stretch;
     padding: 20px;
     gap: 20px;

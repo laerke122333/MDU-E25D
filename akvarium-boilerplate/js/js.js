@@ -7,7 +7,7 @@ console.log('Ok, JavaScriptet kører ...')
 /* fiskeobjekt */
 const guldfisk = {
     navn: "Guldfisk",
-    info: "Fisk, der stammer fra den mystiske sø Hoomhi i det nordlige Tibet.",
+    info: "Fisk, der stammer fra den mystiske sø ...",
     image: "fish_PNG25137_small.png",
     xPos: 400,
     yPos: 150,
@@ -20,14 +20,15 @@ scene.innerHTML += `
      id="${guldfisk.navn}" 
      onclick="fiskInfo('${guldfisk.info}')"
      >
-        <img src="images/${guldfisk.image}" alt="${guldfisk.info}">
+        <img 
+         src="images/${guldfisk.image}" 
+         alt="${guldfisk.info}" >
     </figure>
 `
 
 /* Indsætter egenskaben "info" fra et objekt */
 function fiskInfo(tekst){
-    console.log("et klik") // test
+    console.log("fiskInfo() svarer ...") // test
     info.innerHTML = "<p>" + tekst + "</p>"
 }
 
-/* Baggrundsfiskliste */

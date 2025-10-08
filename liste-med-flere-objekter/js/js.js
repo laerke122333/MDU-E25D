@@ -2,12 +2,12 @@ let trolde = [
   {
     navn: 'Grum',
     vaaben: ['Stridshammer', 'Armbrøst', 'Teske', 'Sut','Spegepølse','Daggert'],
-    billede: 'grum.png'
+    billede: 'troldHanTransp.png'
   },
   {
     navn: 'Similine',
     vaaben: ['Snor', 'Økse', 'Kølle', 'Mjøddunk'],
-    billede: 'similine.png'
+    billede: 'troldHunTransp.png'
   }
 ];
 
