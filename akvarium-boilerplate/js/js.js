@@ -8,7 +8,7 @@ console.log('Ok, JavaScriptet kører ...')
 const guldfisk = {
     navn: "Guldfisk",
     info: "Fisk, der stammer fra den mystiske sø ...",
-    image: "fish_PNG25137_small.png",
+    image: "gladFisk_mini.png",
     xPos: 400,
     yPos: 150,
     speed: 12
@@ -30,5 +30,12 @@ scene.innerHTML += `
 function fiskInfo(tekst){
     console.log("fiskInfo() svarer ...") // test
     info.innerHTML = "<p>" + tekst + "</p>"
+
+    /*
+        Og her kunne intruktionerne så fortsætte med:
+            - afspil lyd, video
+            - start andre animationer ved at kalde deres funktioner
+            - etc.
+    */
 }
 
