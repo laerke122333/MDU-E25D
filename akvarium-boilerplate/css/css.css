@@ -40,7 +40,7 @@ html, body {
   background-image: url('../images/baggrund.png');
   background-size: cover;
   background-repeat: no-repeat;
-  font-size: 32px;
+  font-size: large;
 }
 
 /* Info omådet (her vises informationer om det man klikker på */
