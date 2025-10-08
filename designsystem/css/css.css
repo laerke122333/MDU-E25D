@@ -1,0 +1,244 @@
+/**
+ * file: css/css.css
+ * purpose: styling
+ **/
+
+/* Google fonts */
+/* Sådan importerer du direkte til css */
+
+/* Fonten eller fontene importeres */
+/* @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Lacquer&family=Permanent+Marker&family=Ribeye&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/*
+.oswald-<uniquifier> {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+*/
+
+
+
+
+/* Margin og kanter fjernes i visse browsere */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variable: farver, mv. */
+:root {
+
+  /* farver */
+  --farve_1: rgb(251, 250, 244); /* Lys */
+  --farve_2: #150202; /* Mørkest */
+  --farve_3: #27c3c669;
+  --farve_4: #70496f;
+  --farve_5: #c62a27;
+  --farve_6: #378c3c;
+  /* ... etc ... */
+
+  /* typografi */
+  --broedtekst: Verdana, Geneva, Tahoma, sans-serif;
+  --overskrifter: "Permanent Marker", cursive;
+
+  /* kolonnebredde */
+  --treKolonner: 33%;
+}
+
+/* Sådan bruges variablerne, fx:
+
+ main {
+   color: var(--farve_1);
+   background-color: var(--farve_2);
+ }
+
+*/
+
+/* Fra body nedarved farver og fonte til resten af siden */
+body {
+  font-family: var(--broedtekst);
+  background-color: var(--farve_1);
+  color: var(--farve_4);
+}
+
+/* Når du vil lave kolonner */
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* En nem måde at give kolonner bredde på */
+.treKolonner {
+  width: 33%;
+}
+
+/* Lad billeder fylde 100% som standard */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* FARVEPALETTE */
+#farver article aside {
+  height: 125px;
+  width: 125px;
+  border: 1px solid var(--farve_2);
+}
+
+/* Farve 1 som baggrund */
+.farve_1_bg {
+  background-color: var(--farve_1);
+}
+
+.farve_1_color {
+  color: var(--farve_1);
+}
+
+/* Farve 2 som baggrund */
+.farve_2_bg {
+  background-color: var(--farve_2);
+}
+
+.farve_2_color {
+  color: var(--farve_2);
+}
+
+/* Farve 3 som baggrund */
+.farve_3_bg {
+  background-color: var(--farve_3);
+}
+
+.farve_3_color {
+  color: var(--farve_3);
+}
+
+.farve_6_bg {
+  background-color: var(--farve_6);
+}
+
+/* fortsæt selv ... alle farver skal med ... */
+
+/* TYPOGRAFI */
+h1, 
+h2 {
+  font-family: var(--overskrifter);
+}
+
+h1 {
+ /* Her kommer google font */ 
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h2 {
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+  background-color: var(--farve_3);
+  color: var(--farve_1);
+}
+
+  /* prøv at style overskrifterne!  h1 .. h6 */
+
+
+/* LAYOUT */
+
+/* Topnavigationen */
+/* Placer din navigation et passende sted 
+   Som hovedregel placeres logoet til venstre
+*/
+nav {
+  min-height: 10vh;
+}
+
+nav ul {
+  list-style-type: none; /* fjern bullets */
+  padding: 0; /* fjern padding */
+  margin: 0; /* fjern margins */
+}
+
+nav ul li {
+  min-width: 100px;
+}
+
+nav a {
+  color: var(--farve_1);
+}
+
+/* Logo */
+/* Giv dit logo en passende bredde */
+#logo {
+  width: 112px;
+  border: 1px solid var(--farve_2)
+}
+
+/* Header */
+/* Har typisk fuld bredde og måske et herobillede som baggrund */
+header {
+  min-height: 21vh; /* min-heigt: kan udviddes når nødvendigt */
+  align-content: center;
+  text-align: center;
+  background-color: var(--farve_5);
+  color: var(--farve_1);
+}
+
+/* Main */
+/* Indholdet skal have en overskuelig bredde */
+main {
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 1.4rem;
+  min-height: 100vh;
+}
+
+/* Footer */
+/* Har typisk fuld bredde */
+footer {
+  min-height: 20vh;
+  align-content: center;
+  text-align: center;
+
+  background-color: var(--farve_2);
+  color: var(--farve_1);
+}
+
+/* ØVRIGE HTML-ELEMENTER STYLES */
+/* Her styles, fx: knapper, ikoner, formularer, inputfelter, etc.
+
+Se fx denne side: 
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements
+
+Det er ikke nødvendigt at style ethvert tænkeligt HTML-element. Brug din styletile, og overvej hvilke html-elementer du får brug for til din løsning.
+*/
+
+/* RESPONSIVE STYLES */
+/* Når alt fungerer på den store skærm og i fuld bredde, er tiden inde til at afprøve løsningen på andre skærme. Vælg nogen passende breakpoints og brug @media så elementerne automatisk tilpasser sig brugerens mobil, tablet eller storskærm. */
+
+/* Eksempler
+/* Mobile enheder */
+
+/*
+@media (max-width: 600px){
+  body {
+    background-color: aquamarine;
+  }
+  #stemning {
+    display:block;
+  }
+}
+
+/* Tablets, iPads, &c. */
+/*
+@media (min-width: 601px) and (max-width: 1024px){
+  body {
+    background-color: rgb(252, 21, 198);
+  }
+  #stemning {
+    display: block;
+  }  
+}
+*/

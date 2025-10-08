@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <title>Tastetryk detektor</title>
+  <script>
+    // Funktion der håndterer tastetryk
+    function visTast(event) {
+      const tast = event.key; // Navnet på tasten
+      console.log("Du trykkede på: " + tast);
+      document.getElementById("output").textContent = "Du trykkede på: " + tast;
+    }
+
+    // Lyt efter tastetryk
+    document.addEventListener("keydown", visTast);
+  </script>
+</head>
+<body>
+  <h1>Tryk på en tast</h1>
+  <p id="output">Ingen tast trykket endnu.</p>
+</body>
+</html>
