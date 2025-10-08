@@ -75,4 +75,7 @@ img {
     }
 }
 
-
+/* skjul noget */
+.gemMig {
+    display: none;
+}
