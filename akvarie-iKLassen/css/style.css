@@ -1,0 +1,81 @@
+/* Animationsøvelse */
+
+body {
+    background-color: rgb(18, 18, 124);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+#info {
+    color:fuchsia;
+}
+
+#scene {
+    width: 100%;
+    height: 100vh;
+    border: 1px solid white;
+}
+
+/* her bruges animationen */
+#firkant {
+    position: absolute;
+    top: 0px;
+    left: 255px;
+    width: 122px;
+    height: 122px;
+    animation-name: anima;
+    animation-duration: 4s;
+}
+/* her defineres animationen */
+@keyframes anima {
+    from {
+        top: 0px;
+        left: 255px;
+    }
+    to {
+        top: 777px;
+        left: 889px;
+    }
+}
+
+/* firkant 2 */
+#fisk {
+    position: absolute;
+    width: 345px;
+    height: 65px;
+    top: 0px;
+    left: 0px;
+    animation-name: kompleks;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+}
+
+/* mere kompleks Keyframe-animation */
+@keyframes kompleks {
+    0% {
+        top: 0px;
+        left: 0px;
+        rotate: 180deg;
+    }
+
+    10% {
+        top: 500px;
+        left: 500px;
+        rotate: 30deg;
+        width: 23px;
+    }
+
+    100% {
+        top: 500px;
+        left: 500px;
+        width: 100vw;
+    }
+}
+
+/* skjul noget */
+.gemMig {
+    display: none;
+}
